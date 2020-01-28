@@ -1,3 +1,13 @@
+/* -- COLORS ----------------------------------------
+- Blue/Accent colour
+- Blue/Secondary
+- White
+- Black
+
+
+
+*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -58,7 +68,7 @@ footer {
   bottom: 0;
   width: 100%;
   height: 50px;
-	background: black;
+	background: darkgrey;
 	text-align: center;
 }
 footer p{
@@ -85,31 +95,34 @@ strong {
 /* -- PROJECTS ----------------------------------------*/
 .grid{
 	margin-top: 50px;
-	margin-bottom:50px;
+	margin-bottom:100px;
 	padding: 0 100px 0 100px;
 	display: grid;
 	grid-template-columns: 50% 50%;
 	grid-auto-flow: row dense;
 }
 .grid-element{
-	background: white;
+	display: flex;
+	justify-content: center;
+  align-items: center;
+	object-fit: cover;
+	overflow: hidden;
 	position: relative;
 	border: 5px solid #F5F5F5;
-	height: 350px;
-	overflow: hidden;
+	height: 450px;
 }
 .grid-element img{
+	flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
 	width: 100%;
 	opacity: 1;
+	object-fit: fill;
 }
 .grid-element:hover img{
 	opacity: 0.5;
 	transition: 0.2s ease;
 }
-
-
-
-
 .grid-element .center-text {
   opacity: 0;
   position: absolute;
