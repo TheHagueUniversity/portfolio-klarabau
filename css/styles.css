@@ -8,55 +8,71 @@
 	margin: 0;
 	padding: 0;
 }
+html{
+	scroll-behavior: smooth;
+}
 body {
 	background: #F5F5F5;
-	font-family: sans-serif;
+	font-family: 'Space Mono', monospace;
 	color: #19191C;
+	font-size:16px;
+}
+.container{
+	width: 75%;
+	margin: 0 auto;
 }
 h1 {
 	font-size: 80px;
+	font-family: sans-serif;
 	text-align: center;
 }
-p{
-	font-family: 'Space Mono', monospace;
-	font-size: 30px;
-	text-align: center;
+ul{
+	list-style: none;
+}
+ol{
+	list-style: none;
+}
+ul li{
+	display: inline;
+}
+li a{
+	text-decoration: none;
 }
 
 /* -- NAVIGATION ----------------------------------------*/
 nav {
-	position: sticky;
 	width: 100%;
+	padding: 30px 0 30px 0;
 	font-size: 10px;
+	top: 0;
+	background-color: #F5F5F5;
+	opacity: 95%;
+	z-index: 1;
 }
-ul{
-	list-style: none;
+nav ul{
 	text-align: center;
-	margin: 30px 0 30px 0;
 }
-ul li{
-	display: inline;
+nav ul li{
 	margin: 0px 20px 0px 20px;
 }
-ul li a{
+nav ul li a{
 	color: #bababa;
-	text-decoration: none;
 	letter-spacing: 1em;
 	line-height: 30px;
 }
-ul li a:hover {
+nav ul li a:hover {
 	transition: 0.15s ease;
 	font-size: 17px;
 	line-height: 30px;
 }
-ul li a i{
+nav ul li a i{
 	line-height: 30px;
 }
-ul li a i:hover {
+nav ul li a i:hover {
 	transition: 0.15s ease;
 	transform: scale(1.6);
 }
-.active{
+nav .active{
 	color: #19191C;
 }
 
@@ -90,12 +106,15 @@ footer p{
 strong {
 	color: #0750ed;
 }
+.hero-text p{
+	font-size: 30px;
+	text-align: center;
+}
 
 /* -- PROJECTS ----------------------------------------*/
 .grid{
 	margin-top: 50px;
 	margin-bottom:100px;
-	padding: 0 100px 0 100px;
 	display: grid;
 	grid-template-columns: 50% 50%;
 	grid-auto-flow: row dense;
@@ -139,6 +158,53 @@ strong {
   opacity: 1;
 }
 
+/* -- ABOUT ME ----------------------------------------*/
+section{
+	padding-top:80px;
+}
+#contact{
+	margin-bottom:100px;
+}
+.mini-nav {
+	position:sticky;
+	width: 100%;
+	font-size: 12px;
+	top: 0;
+	background-color: #F5F5F5;
+	opacity: 95%;
+	z-index: 1;
+	
+	position: sticky;
+	text-align: center;
+	padding: 30px 0 30px 0;
+}
+.mini-nav li{
+	padding: 0px 20px 0px 20px;
+	display: inline-block;
+}
+.mini-nav li:hover{
+	background: #0750ed;
+	transition: 0.2s ease;
+}
+.mini-nav li a{
+	color: #19191C;
+	line-height: 30px;
+}
+.mini-nav li:hover a{
+	color: white;
+	transition: 0.2s ease;
+}
+.img-like{
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+  align-items: center;
+	object-fit: cover;
+	overflow: hidden;
+	height: 200px;
+	width: 200px;
+	margin: 10px;
+}
 
 
 
