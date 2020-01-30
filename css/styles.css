@@ -114,6 +114,19 @@ strong {
 	font-size: 30px;
 	text-align: center;
 }
+.img-me{
+	background-color: rgba(7, 80, 237, 0.08) ;
+	overflow: scroll;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+  align-items: center;
+	object-fit: scale-down;
+	overflow: hidden;
+	height: 200px;
+	width: 200px;
+	margin: 10px;
+}
 
 /* -- PROJECTS ----------------------------------------*/
 .grid{
@@ -141,12 +154,12 @@ strong {
 	opacity: 1;
 	object-fit: cover;
 }
-.grid-element:hover img{
+.grid-hover:hover img{
 	opacity: 0.5;
 	transition: 0.2s ease;
 	transform: scale(1.2);
 }
-.grid-element .center-text {
+.grid-hover .center-text {
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -159,9 +172,16 @@ strong {
   padding: 16px 32px;
 	text-align: center;
 }
-.grid-element:hover .center-text {
+.grid-hover:hover .center-text {
   opacity: 1;
 }
+
+
+/* -- PROJECT DETAILS ----------------------------------------*/
+.grid-element p{
+	text-align: left;
+}
+
 
 /* -- ABOUT ME ----------------------------------------*/
 section{
