@@ -116,7 +116,6 @@ strong {
 }
 .img-me{
 	background-color: rgba(7, 80, 237, 0.08) ;
-	overflow: scroll;
 	border-radius: 50%;
 	display: inline-flex;
 	justify-content: center;
@@ -125,7 +124,7 @@ strong {
 	overflow: hidden;
 	height: 200px;
 	width: 200px;
-	margin: 10px;
+	margin-top: 10px;
 }
 
 /* -- PROJECTS ----------------------------------------*/
@@ -185,7 +184,7 @@ strong {
 
 /* -- ABOUT ME ----------------------------------------*/
 section{
-	padding-top:80px;
+	padding-top:40px;
 }
 #contact{
 	margin-bottom:100px;
@@ -231,10 +230,15 @@ section{
 	width: 200px;
 	margin: 10px;
 }
-dd{
-	position:relative;
-	left:110px;
-	top:-22px;
+dt{
+	margin-top: 20px;
+}
+.li-first{
+	margin-top: 0;
+}
+section h2{
+	text-align: right;
+	margin-right: 150px;
 }
 #contact li{
 	display:inline-block;
@@ -244,12 +248,6 @@ dd{
 	text-decoration: none;
 	color:#19191C;
 }
-
-
-
-
-
-
-
-
-
+ol li{
+	margin-top: 20px;
+}
