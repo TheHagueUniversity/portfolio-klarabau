@@ -23,7 +23,7 @@ body {
 }
 h1 {
 	font-size: 80px;
-	font-family: sans-serif;
+	font-family: 'Helvetica', 'Arial', sans-serif;
 	text-align: center;
 }
 ul{
@@ -115,12 +115,11 @@ strong {
 	text-align: center;
 }
 .img-me{
-	background-color: white;
 	border-radius: 50%;
 	display: inline-flex;
 	justify-content: center;
   align-items: center;
-	object-fit: scale-down;
+	object-fit: contain;
 	overflow: hidden;
 	height: 200px;
 	width: 200px;
